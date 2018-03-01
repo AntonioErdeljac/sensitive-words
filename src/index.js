@@ -1,1 +1,6 @@
-export default () => 'Hello Worsld';
+export default (content, words) => (
+  content.replace(
+    new RegExp(words.join('|'), 'ig'),
+    '***'
+  )
+);
