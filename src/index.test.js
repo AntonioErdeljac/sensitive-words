@@ -7,5 +7,5 @@ test('replaces blacklisted words with asterisks', () => (
 
 test('replaces multiple instances of blacklisted words', () => (
   expect(sensitiveWords('ja sam erdeljac antonio erdeljac', ['erdeljac']))
-    .toBe('ja sam *** antonio ****')
+    .toBe('ja sam **** antonio ****')
 ));

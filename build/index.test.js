@@ -11,5 +11,5 @@ test('replaces blacklisted words with asterisks', function () {
 });
 
 test('replaces multiple instances of blacklisted words', function () {
-  return expect((0, _2.default)('ja sam erdeljac antonio erdeljac', ['erdeljac'])).toBe('ja sam *** antonio ****');
+  return expect((0, _2.default)('ja sam erdeljac antonio erdeljac', ['erdeljac'])).toBe('ja sam **** antonio ****');
 });
